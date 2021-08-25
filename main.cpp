@@ -12,6 +12,10 @@
 #include "commonstore.h"
 #include "flux/dispatcher.h"
 
+int foo(int a, int b) {
+    return a + b;
+}
+
 int main(int argc, char* argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
