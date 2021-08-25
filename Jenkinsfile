@@ -8,8 +8,8 @@ pipeline {
                 echo "building the application..."
                 sh """
                     pwd
-                    java cia/cia.jar TestAppWS/configuration.txt
-                    head -n 20 TestAppWS/VersionDifference-project-project2.log
+                    java ~/cia/cia.jar ~/TestAppWS/configuration.txt
+                    head -n 20 ~/TestAppWS/VersionDifference-project-project2.log
                 """
             }
         }
