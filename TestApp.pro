@@ -50,3 +50,6 @@ HEADERS += \
     statemachine/StatemachineInterface.h \
     statemachine/TestApp.h \
     statemachine/sc_types.h
+
+DISTFILES += \
+    Jenkinsfile
