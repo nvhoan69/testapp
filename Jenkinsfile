@@ -15,8 +15,9 @@ pipeline {
                 sh """
                     pwd
                     cd ~/.jenkins
-                    java -jar cia/cia.jar testappws/config.txt
+                    java -jar cia/cia.jar DIFFER testappws/config.txt
                     head -n 20 testappws/VersionDifference-project-project2.log
+                    java -jar cia/cia.jar BUILD_TREE testappws/config.txt
                 """
             }
         }
