@@ -6,11 +6,17 @@ pipeline {
         stage("build") {
             steps {
                 echo "building the application..."
+            }
+        }
+
+        stage("cia") {
+            steps {
+                echo "cia running..."
                 sh """
                     pwd
-                    cd ~/
-                    java -jar cia/cia.jar TestAppWS/configuration.txt
-                    head -n 20 TestAppWS/VersionDifference-project-project2.log
+                    cd ~/.jenkins
+                    java -jar cia/cia.jar testappws/config.txt
+                    head -n 20 testappws/VersionDifference-project1-project2.log
                 """
             }
         }
