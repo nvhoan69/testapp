@@ -13,7 +13,7 @@
 #include "flux/dispatcher.h"
 
 int sum(int a, int b) {
-    return a + b;
+    return a + b + 100;
 }
 
 int foo(int a, int b) {
