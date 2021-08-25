@@ -16,7 +16,7 @@ pipeline {
                     pwd
                     cd ~/.jenkins
                     java -jar cia/cia.jar testappws/config.txt
-                    head -n 20 testappws/VersionDifference-project1-project2.log
+                    head -n 20 testappws/VersionDifference-project-project2.log
                 """
             }
         }
