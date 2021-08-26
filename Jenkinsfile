@@ -27,19 +27,15 @@ pipeline {
             }
         }
 
-        stage("test") {
+        stage("ut") {
             steps {
-                echo "testing the application..."
+                echo "unit testing..."
+                sh """
+                    cd ~/.jenkins
+                    java -jar helloworld.jar
+                """
             }
         }
-
-        stage("deploy") {
-            steps {
-                echo "deploying the application..."
-                echo "./build_test_app/TestApp"
-            }
-        }
-
     }
 
     post {
