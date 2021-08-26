@@ -6,6 +6,11 @@ pipeline {
         stage("build") {
             steps {
                 echo "building the application..."
+                sh """
+                    /opt/Qt5.14.2/5.14.2/gcc_64/bin/qmake TestApp.pro
+                    make clean
+                    make -j4
+                """
             }
         }
 
@@ -31,6 +36,7 @@ pipeline {
         stage("deploy") {
             steps {
                 echo "deploying the application..."
+                ./build_test_app/TestApp
             }
         }
 
