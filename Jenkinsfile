@@ -36,7 +36,9 @@ pipeline {
         stage("deploy") {
             steps {
                 echo "deploying the application..."
-                ./build_test_app/TestApp
+                sh """
+                    ./build_test_app/TestApp
+                """
             }
         }
 
