@@ -18,7 +18,7 @@ int sum(int a, int b) {
 
 int foo(int a, int b) {
     int c = sum(a, b);
-    return c + 1000;
+    return c;
 }
 
 int main(int argc, char* argv[])
