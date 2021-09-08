@@ -17,6 +17,9 @@ TestApp::~TestApp()
 {
 }
 
+TestApp::sum(int a, int b) {
+	return a + b; 
+}
 
 void TestApp::init()
 {
