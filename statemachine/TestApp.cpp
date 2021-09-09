@@ -17,10 +17,6 @@ TestApp::~TestApp()
 {
 }
 
-TestApp::sum(int a, int b) {
-	return a + b; 
-}
-
 void TestApp::init()
 {
     for (sc_ushort i = 0; i < maxOrthogonalStates; ++i)
@@ -28,6 +24,8 @@ void TestApp::init()
         stateConfVector[i] = TestApp_last_state;
     }
 
+  	int a = 100;
+  
     stateConfVectorPosition = 0;
     clearInEvents();
     clearOutEvents();
