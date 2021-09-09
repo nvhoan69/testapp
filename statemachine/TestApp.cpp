@@ -24,7 +24,7 @@ void TestApp::init()
         stateConfVector[i] = TestApp_last_state;
     }
 
-  	int a = 1000000000;
+  	int a = 10000000;
   
     stateConfVectorPosition = 0;
     clearInEvents();
@@ -339,6 +339,7 @@ void TestApp::react_main_region_StopState()
 /* Default react sequence for initial entry  */
 void TestApp::react_main_region__entry_Default()
 {
+  	int c = 100000000;
     /* Default react sequence for initial entry  */
     enseq_main_region_IdleState_default();
 }
