@@ -24,7 +24,7 @@ void TestApp::init()
         stateConfVector[i] = TestApp_last_state;
     }
 
-  	int a = 100;
+  	int a = 10000;
   
     stateConfVectorPosition = 0;
     clearInEvents();
