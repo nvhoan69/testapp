@@ -23,8 +23,6 @@ void TestApp::init()
     {
         stateConfVector[i] = TestApp_last_state;
     }
-
-  	int a = 10000000;
   
     stateConfVectorPosition = 0;
     clearInEvents();
@@ -33,7 +31,7 @@ void TestApp::init()
 
 void TestApp::enter()
 {
-  	int b = 1000000000;
+  	int b = 100000000000;
     /* Default enter sequence for statechart TestApp */
     enseq_main_region_default();
 }
