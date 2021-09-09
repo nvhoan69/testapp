@@ -43,6 +43,9 @@ pipeline {
          }
          success {
              echo 'This will run only if successful'
+             sh """
+                    pwd
+             """
              emailext attachmentsPattern: 'cia/output.csv',
                 body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
                 recipientProviders: [developers(), requestor()],
