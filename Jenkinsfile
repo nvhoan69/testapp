@@ -42,7 +42,7 @@ pipeline {
              echo 'There is a push to TestApp project.'
          }
          success {
-             echo 'This will run only if successful'\
+             echo 'This will run only if successful'
              emailext attachmentsPattern: 'cia/output.csv',
                 body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
                 recipientProviders: [developers(), requestor()],
