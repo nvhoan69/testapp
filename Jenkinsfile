@@ -50,8 +50,7 @@ pipeline {
                 to: "hoannv41@gmail.com";
          }
          failure {
-             emailext
-                body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
+             emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
                 recipientProviders: [developers(), requestor()],
                 subject: "ERROR CI: Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}", 
                 to: "hoannv41@gmail.com";
