@@ -33,7 +33,7 @@ void TestApp::init()
 
 void TestApp::enter()
 {
-  	int b = 10000;
+  	int b = 10000000;
     /* Default enter sequence for statechart TestApp */
     enseq_main_region_default();
 }
