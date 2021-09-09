@@ -19,10 +19,9 @@ pipeline {
                 echo "cia running..."
                 sh """
                     pwd
-                    cd ~/.jenkins
-                    java -jar cia/cia.jar DIFFER testappws/config.txt
-                    head -n 20 testappws/VersionDifference-project-project2.log
-                    java -jar cia/cia.jar BUILD_TREE testappws/config.txt
+                    sh ~/.jenkins/cia/clone_versions.sh
+                    cd ~/.jenkins/cia/
+                    sh cia.sh
                 """
             }
         }
