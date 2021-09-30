@@ -23,6 +23,7 @@ UI_DIR = $$DESTDIR/.ui
 SOURCES += \
         action/actionprovider.cpp \
         commonstore.cpp \
+        hello.cpp \
         main.cpp \
         statemachine/TestApp.cpp
 
@@ -47,6 +48,7 @@ HEADERS += \
     flux/dispatcher.h \
     flux/middleware.h \
     flux/store.h \
+    hello.h \
     statemachine/StatemachineInterface.h \
     statemachine/TestApp.h \
     statemachine/sc_types.h
