@@ -12,21 +12,13 @@
 #include "commonstore.h"
 #include "flux/dispatcher.h"
 
-
-
-
-
-
-
 int sum(int a, int b) {
-	int c = 100;
-
-    int d = 10;
     return a + b;
 }
 
 int foo2(int a, int b) {
     int d = sum(a, b);
+    d += 1000;
     return d;
 }
 
