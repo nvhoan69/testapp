@@ -12,14 +12,13 @@
 #include "commonstore.h"
 #include "flux/dispatcher.h"
 
-int sum(int a, int b) {
-    return a + b;
+int foo(int a, int b) {
+    int d = 1000;
+    return d;
 }
 
-int foo2(int a, int b) {
-    int d = sum(a, b);
-    d += 1000;
-    return d;
+int bar(int c) {
+	return c * c;
 }
 
 int main(int argc, char* argv[])
