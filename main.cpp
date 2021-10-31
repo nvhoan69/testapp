@@ -12,8 +12,8 @@
 #include "commonstore.h"
 #include "flux/dispatcher.h"
 
-typedef vip1 "V.I.P number 1"
-typedef vip2 "V.I.P number 2"
+typedef vip1 "V.I.P number 1";
+typedef vip2 "V.I.P number 2";
 
 struct product {
 	int weight;
