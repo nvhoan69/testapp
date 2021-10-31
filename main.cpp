@@ -12,6 +12,19 @@
 #include "commonstore.h"
 #include "flux/dispatcher.h"
 
+#typedef vip1 = "V.I.P number 1"
+#typedef vip2 = "V.I.P number 2"
+
+struct product {
+	int weight;
+	int price;
+}
+
+union mydata {
+	int myInt;
+	float myFloat;
+}
+
 int foo(int a, int b) {
     int d = 1000;
     return d;
