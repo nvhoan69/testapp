@@ -26,7 +26,7 @@ union mydata {
 };
 
 int foo(int a, int b) {
-    int d = 1000;
+    int d = 1000000;
     return d;
 }
 
