@@ -15,7 +15,7 @@
 int sum(int a, int b) {
 	int c = 100;
 	int d = c + a + b;
-    return d + c;
+    return d + c + 100;
 }
 
 int foo2(int a, int b) {
